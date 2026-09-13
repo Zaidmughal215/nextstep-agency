@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "NextStep",
   tagline: "Websites That Book Clients. Software That Ships.",
-  url: "https://nextsteppk.site",
-  logo: "https://nextsteppk.site/og-image.png",
-  ogImage: "https://nextsteppk.site/og-image.png",
+  url: "https://nextseppk.site",
+  logo: "https://nextseppk.site/og-image.png",
+  ogImage: "https://nextseppk.site/og-image.png",
   email: "info.zaid.officials@gmail.com",
   phones: ["+923284738123", "+923394807064"] as const,
   phoneDisplay: ["+92 328 4738123", "+92 339 4807064"] as const,
