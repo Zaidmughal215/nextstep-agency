@@ -1,0 +1,40 @@
+{
+  "name": "nextstep-agency",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NextStep — Digital Studio Faisalabad. Software, Websites, Branding. Static export for GitHub Pages (zportfolio.site).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build",
+    "deploy": "next build && node scripts/add-nojekyll.js && gh-pages -d out -t"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.14",
+    "lucide-react": "^1.45.0",
+    "motion": "^13.2.0",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.6.3"
+  }
+}

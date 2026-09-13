@@ -1,0 +1,20 @@
+# NextStep - Digital Studio Faisalabad (zportfolio.site)
+> Faisalabad-based agency: Custom Software Development, Website Building (Next.js), Business Branding. 14-day MVPs, 90-day support. Phones +92 328 4738123 / +92 339 4807064. Email info.zaid.officials@gmail.com
+
+## What is NextStep?
+NextStep is a two-founder digital studio in Faisalabad, Punjab, Pakistan. Founders: Abdul Rahman (Marketing & Client Relations, +92 328 4738123) and Zaid Mughal (Developer & Graphic Designer, +92 339 4807064). Serves Faisalabad, Lahore, Islamabad, all Pakistan, and US clients.
+
+## Services
+- Custom Software Development: bespoke web apps (Next.js+TS). MVP 14 days + admin/API/docs/training + 90-day support.
+- Website Building: 5-8 page static sites, SEO + sitemap + OG, <1s LCP, WhatsApp+maps, 7-10 days from PKR 45k.
+- Business Branding: logo suite + guidelines + social/print kit in 7 days.
+
+## Case-study facts (6)
+InventoryPro +38% accuracy; Clinic Booker 2.1x bookings; Boutique Store 0.8s LCP 3x leads; Restaurant #3 local rank; Chai kit 7 days; Gym +52% trials.
+
+## Contact endpoints
+- Web: https://zportfolio.site/contact/
+- Email: info.zaid.officials@gmail.com
+- Tel: +923284738123, +923394807064
+- Area: Faisalabad, Punjab, PK. Hours Mo-Sa 09:00-18:00 PKT.
+- Sitemap: https://zportfolio.site/sitemap.xml

@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ——— Retro-editorial base ——— */
+@layer base {
+  :root {
+    --brand-red: #e3262e;
+    --brand-cream: #f9f7f5;
+    --brand-dark: #1a1a1a;
+    --brand-yellow: #fff4a3;
+  }
+
+  * {
+    border-color: #1a1a1a;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis owns smooth scroll */
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    @apply bg-[#F9F7F5] text-[#1A1A1A] font-body antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-bold tracking-tight;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: #e3262e;
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 3px solid #e3262e;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Default system cursor restored — custom cursor disabled per
+     brand icon audit (was: cursor:none on any-hover). */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Neutomni-style framing */
+  .editorial-frame {
+    @apply border-[3px] border-[#1A1A1A] bg-white shadow-[6px_6px_0_0_#1A1A1A] rounded-xl;
+  }
+  .editorial-frame-sm {
+    @apply border-[3px] border-[#1A1A1A] bg-white shadow-[4px_4px_0_0_#1A1A1A] rounded-xl;
+  }
+  .badge-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em];
+  }
+  .section-pad {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#E3262E] after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
