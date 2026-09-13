@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages (zportfolio.site)
+name: Deploy to GitHub Pages (nextstep-agency)
 
 on:
   push:

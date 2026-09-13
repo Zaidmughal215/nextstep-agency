@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
+const repo = "nextstep-agency";
+
 const nextConfig = {
-  // GitHub Pages: custom domain zportfolio.site, repo zaidportfolio.site
-  // Static export — no server runtime, no headers(), no image optimization.
+  // Static export — no server runtime, no image optimization.
+  // Project site https://zaidmughal215.github.io/nextstep-agency/ needs basePath;
+  // local dev stays at http://localhost:3000.
   output: "export",
   trailingSlash: true,
+  basePath: isGithubActions ? `/${repo}` : "",
+  assetPrefix: isGithubActions ? `/${repo}/` : "",
   images: {
     unoptimized: true,
   },
-  // No basePath — custom domain serves from root.
   poweredByHeader: false,
   reactStrictMode: true,
 };
