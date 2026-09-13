@@ -41,8 +41,8 @@ export default function AboutSection() {
           <Reveal delay={0.12}>
             <div className="grid gap-5 sm:grid-cols-2">
               {[
-                { initials: "AR", name: "Abdul Rahman", role: "Marketing & Client Relations", tel: "+92 328 4738123", bg: "bg-[#E3262E] text-white", src: "/images/founders/abdul-rahman.webp", alt: "Abdul Rahman - Co-Founder of NextStep" },
-                { initials: "ZM", name: "Zaid Mughal", role: "Developer & Graphic Designer", tel: "+92 339 4807064", bg: "bg-[#1A1A1A] text-white", src: "/images/founders/zaid-mughal.webp", alt: "Zaid Mughal - Co-Founder of NextStep" },
+                { initials: "AR", name: "Abdul Rahman", role: "Marketing & Client Relations", tel: "+92 328 4738123", bg: "bg-[#E3262E] text-white", src: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/founders/abdul-rahman.webp`, alt: "Abdul Rahman - Co-Founder of NextStep" },
+                { initials: "ZM", name: "Zaid Mughal", role: "Developer & Graphic Designer", tel: "+92 339 4807064", bg: "bg-[#1A1A1A] text-white", src: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/founders/zaid-mughal.webp`, alt: "Zaid Mughal - Co-Founder of NextStep" },
               ].map((f) => (
                 <article key={f.name} className="editorial-frame p-5 text-center">
                   <FounderAvatar src={f.src} alt={f.alt} initials={f.initials} fallbackBg={f.bg} className="mx-auto" />

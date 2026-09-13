@@ -30,7 +30,7 @@ function HeaderNav() {
       <Link href="/" title="NextStep — Home | Digital Studio Faisalabad" className="flex items-center gap-2 font-heading text-xl font-black tracking-tight">
         <span aria-hidden="true" className="grid size-9 place-items-center overflow-hidden rounded-full border-[3px] border-[#1A1A1A] bg-[#1A1A1A] shadow-[3px_3px_0_0_#1A1A1A]">
           <Image
-            src="/images/brand/nextstep-icon.webp"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/brand/nextstep-icon.webp`}
             alt="NextStep logo"
             width={36}
             height={36}

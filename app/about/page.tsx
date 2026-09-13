@@ -51,13 +51,13 @@ export default function AboutPage() {
             {
               initials: "AR", name: "Abdul Rahman", role: "Co-Founder — Marketing & Client Relations",
               tel: "+92 328 4738123", href: "tel:+923284738123", bg: "bg-[#E3262E] text-white",
-              src: "/images/founders/abdul-rahman.webp", alt: "Abdul Rahman - Co-Founder of NextStep",
+              src: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/founders/abdul-rahman.webp`, alt: "Abdul Rahman - Co-Founder of NextStep",
               bio: "Abdul owns discovery, pricing and delivery. He scopes fixed quotes in 24 hours, sends daily Urdu/English updates, and makes sure what was promised is what ships. SMEs stay because he answers.",
             },
             {
               initials: "ZM", name: "Zaid Mughal", role: "Co-Founder — Developer & Graphic Designer",
               tel: "+92 339 4807064", href: "tel:+923394807064", bg: "bg-[#1A1A1A] text-white",
-              src: "/images/founders/zaid-mughal.webp", alt: "Zaid Mughal - Co-Founder of NextStep",
+              src: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/founders/zaid-mughal.webp`, alt: "Zaid Mughal - Co-Founder of NextStep",
               bio: "Zaid designs and builds everything — Next.js frontends, TypeScript backends, logos and guidelines. Obsessed with <1s LCP, clean type and print-ready files. If it ships, he built it.",
             },
           ].map((f, i) => (
